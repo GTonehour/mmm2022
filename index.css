@@ -1,0 +1,185 @@
+body {
+    font-family: "Cormorant Garamond";
+    margin:0px;
+    background-image: url("bandeau.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+@media (max-width: 720px) {
+    body {
+        background-size: 720px /* Force the image to its minimum width */
+    }
+}
+
+.bandeau {
+    position:absolute;
+    top:0;
+}
+
+petit-de {
+    font-size: clamp(2rem,4vw,4rem);
+}
+
+mathilde-maxime  {
+    line-height: clamp(4rem,8vw,8rem);
+}
+
+bandeau-haut {
+    line-height: clamp(2rem,4vw,4rem);
+    display:block;
+    font-size: clamp(4rem,8vw,8rem);
+    width: 75vw;
+    margin:clamp(2rem,6vw,6vw) auto 0 auto;
+    text-align: center;
+    font-family: "Caroline";
+    transition-duration: 1s;
+    transition-property: transform;
+}
+
+bandeau-haut:hover {
+    transform: scale(1.1);
+}
+
+nav-entete {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(143px,1fr));
+    font-size: clamp(1.5rem,2.5vw,3rem);
+    justify-items: center;
+    margin-top: 2vw;
+}
+
+nav-entete > a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+    margin-top:6vh;
+}
+
+.soon {
+    color:rgb(161, 161, 161);
+}
+
+nav-entete > a:before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    content: '';
+    -webkit-transform: translateY(8px);
+    opacity: 0;
+    transition-property: -webkit-transform, opacity;
+    transition-duration: .3s;
+  }
+
+.ready:hover:before {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+
+citation-mariage {
+    display: flex;
+    height:58vh;
+    padding: 0 30px 0 30px;
+}
+
+annonce-mariage {
+    font-size: clamp(2rem,4vw,4rem);
+    margin:auto;
+}
+
+h2 {
+    display:block;
+    font-size: clamp(1.5rem,2.5vw,3rem);
+}
+
+.seul {
+    margin:100px 20px 10px 20px;
+}
+
+.photext {
+    margin: 50px 80px 0 80px;
+    display:grid;
+}
+
+.photext.pair {
+    grid-template-columns:minmax(500px,1fr) 1fr;
+}
+
+.photext.impair {
+    grid-template-columns:1fr minmax(500px,1fr);
+}
+
+@media (max-width: 700px) {
+    .photext {
+      display:block;
+      margin:50px auto auto auto;
+    }
+  }
+
+.contenu {
+    font-size: clamp(1.5rem,2.5vw,2rem);
+}
+
+.contenu div {
+    margin-top:25px;
+}
+
+.contenu a {
+    text-decoration:none;
+}
+
+.contenu a:hover {
+    color:#c5cab3;
+}
+
+.contenu a {
+    color: #a5aa95;
+}
+.contenu a:visited {
+    color: #a5aa95;
+}
+
+.contenu-marges {
+    margin:0 20px 0 20px;
+}
+
+adresse-lieu {
+    font-size: clamp(1.5rem,2.5vw,3rem);
+    margin: auto;
+    margin:20px 20px 10px 20px;
+}
+
+iframe {
+    grid-column: 1 / span 2;
+    width:100%;
+    margin-top:50px;
+}
+
+.dessin {
+    margin:auto;
+    display:block;
+}
+
+footer {
+    margin:auto;
+    display: block;
+    width: 100px;
+}
+
+#chateau {
+    width: 97%;
+    display: block;
+}
+#fleurs {
+    width: 100%;
+    display: block;
+}
+#nous {
+    width: clamp(15rem,250vw,30rem);
+    display: block;
+}

@@ -1,13 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+
+<bandeau-haut>Mariage<br/><petit-de>de</petit-de><br/><mathilde-maxime>Mathilde & Maxime</mathilde-maxime></bandeau-haut>
+
+<nav-entete>
+    <a href="#lieu" class="ready">Château</a>
+    <a href="#hebergement" class="ready">Hébergement</a>
+    <a href="#j" class="soon">Jour J</a>
+    <a href="#liste" class="soon">Liste de mariage</a>
+</nav-entete>
+
+<citation-mariage>
+    <annonce-mariage>Le 7 mai 2022 au château de Chavagnac</annonce-mariage>
+</citation-mariage>
+
+<contenu-lieu class="contenu photext pair">
+    <img src="chateau.jpg" id="chateau">
+    <!--🐐 Carte -->
+    
+    <adresse-lieu class="contenu-marges">
+        <h2 id="lieu">Château de Chavagnac</h2>
+        Route de Tournon, 07610 Lemps</adresse-lieu>
+</contenu-lieu>
+
+<contenu-hebergement class="photext impair">
+    <div class="contenu-marges">
+        <h2 id="hebergement">
+            Hébergement
+        </h2>
+        <div class="contenu">
+            <div><a href="https://chateaudelemps.com/">chateaudelemps.com</a> : chambre et gîte ;<br/></div>
+            <div><a href="https://www.laboheme-ardeche.com">laboheme-ardeche.com</a> : camping, locations de mobil-homes, chalet-lodges, caravanes vintage, chambres d’hôtel ;<br/></div>
+            <div><a href="http://www.gite-tournon.fr/">gite-tournon.fr</a> : gîte "Pied du géant" ;<br/></div>
+            Emplacements disponibles pour planter les tentes.
+        </div>
+    </div>
+    <img src="fleurs.png" id="fleurs">
+    <iframe src="https://www.google.com/maps/d/embed?mid=12hgW6L7oD5bFwb5be89uu0R1WX4gSWcs&hl=fr" height="480"></iframe>
+</contenu-hebergement>
+
+<contenu-j class="contenu photext pair">
+    <img src="nous.png" id="nous">
+    
+    <div class="contenu-marges">
+        <h2 id="j">Jour J</h2>
+        <div>Un animateur sera présent pour veiller sur les enfants (> 3 ans)</div>
+        <div>Nous mettrons en ligne le déroulement du grand jour et la liste de mariage le 1er octobre 2021.</div>
+    </div>
+</contenu-j>
+
+
+<h2 id="liste" class="seul">Liste de mariage</h2>
+
+<contenu-liste class="contenu contenu-marges">
+    Nous mettrons en ligne le timing du grand jour et la liste de mariage le 1<sup>er</sup> octobre 2021.
+</contenu-liste>
+
+<img src="dessin.jpg" class="dessin">
+<footer>
+    mathilde.maxime.2022@gmail.com
+</footer>
+
+<!--Liste de mariage
+15h début cérémonie
+Plus tard
+Piscine à dispo lea-->
 
 </body>
-</html> 
+</html>
