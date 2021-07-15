@@ -88,6 +88,15 @@ citation-mariage {
 }
 
 annonce-mariage {
+    transition-duration: 2s;
+    transition-property: transform;
+}
+
+annonce-mariage:hover {
+    transform: scale(1.05);
+}
+
+annonce-mariage {
     font-size: clamp(2rem,4vw,4rem);
     margin:auto;
 }
@@ -95,31 +104,35 @@ annonce-mariage {
 h2 {
     display:block;
     font-size: clamp(1.5rem,2.5vw,3rem);
+    margin-top: 0px;
 }
 
 .seul {
     margin:100px 20px 10px 20px;
+    text-align: center;
 }
 
 .photext {
-    margin: 50px 80px 0 80px;
+    margin: 50px 5vw 0 5vw;
     display:grid;
 }
 
 .photext.pair {
-    grid-template-columns:minmax(500px,1fr) 1fr;
+    grid-template-columns:minmax(400px,1fr) 1fr;
 }
 
 .photext.impair {
-    grid-template-columns:1fr minmax(500px,1fr);
+    grid-template-columns:1fr minmax(400px,1fr);
 }
 
-@media (max-width: 700px) {
-    .photext {
-      display:block;
-      margin:50px auto auto auto;
-    }
-  }
+.impair .text {
+    padding-right: 20px;
+    order:1;
+}
+
+.text {
+    margin: 0 20px 0 20px;
+}
 
 .contenu {
     font-size: clamp(1.5rem,2.5vw,2rem);
@@ -137,10 +150,10 @@ h2 {
     color:#c5cab3;
 }
 
-.contenu a {
+.vert {
     color: #a5aa95;
 }
-.contenu a:visited {
+.vert:visited {
     color: #a5aa95;
 }
 
@@ -158,6 +171,13 @@ iframe {
     grid-column: 1 / span 2;
     width:100%;
     margin-top:50px;
+    order:3;
+
+}
+
+contenu-liste {
+    display: block;
+    text-align: center;
 }
 
 .dessin {
@@ -166,20 +186,53 @@ iframe {
 }
 
 footer {
-    margin:auto;
     display: block;
-    width: 100px;
+    text-align: center;
+    font-size: clamp(1.5rem,2.5vw,3rem);
+}
+
+footer a {
+    text-decoration:none;
+}
+
+footer a:hover {
+    color:#c5cab3;
+}
+
+img {
+    display:block;
+    margin-bottom: 20px;
 }
 
 #chateau {
     width: 97%;
-    display: block;
 }
 #fleurs {
     width: 100%;
-    display: block;
+    order:2;
 }
 #nous {
-    width: clamp(15rem,250vw,30rem);
-    display: block;
+    width: 100%;
 }
+
+@media (max-width: 900px) {
+    .photext {
+        margin:50px auto auto auto;
+      }
+
+    .photext.pair {
+      grid-template-columns: 1fr;
+    }
+
+    .photext.impair {
+      grid-template-columns: 1fr;
+    }
+
+    #fleurs {
+        order:1;
+    }
+
+    iframe {
+        grid-column: 1 / span 1;
+    }
+  }
