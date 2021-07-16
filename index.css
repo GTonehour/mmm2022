@@ -107,7 +107,7 @@ annonce-mariage:hover {
 }
 
 annonce-mariage {
-    font-size: clamp(2rem,4vw,4rem);
+    font-size: clamp(2rem,4vw,3rem);
     margin:auto;
 }
 
@@ -125,6 +125,8 @@ h2 {
 .photext {
     margin: 50px 5vw 0 5vw;
     display:grid;
+    z-index:2;
+    position: relative;
 }
 
 .photext.pair {
@@ -141,7 +143,7 @@ h2 {
 }
 
 .contenu {
-    font-size: clamp(1.5rem,2.5vw,2rem);
+    font-size: clamp(1.5rem,2.5vw,1.7rem);
     margin: 0 20px 0 20px;
 }
 
@@ -174,6 +176,20 @@ adresse-lieu {
     margin:20px 20px 10px 20px;
 }
 
+position-relative {
+    position: relative;
+}
+
+pave-couleur {
+    background-color: #fffbf5;
+    display: block;
+    width: 100vw;
+    height:34vw;
+    position: absolute;
+    z-index:1;
+    top: 207px;
+}
+
 iframe {
     grid-column: 1 / span 2;
     width:100%;
@@ -195,7 +211,7 @@ contenu-liste {
 footer {
     display: block;
     text-align: center;
-    font-size: clamp(1.5rem,2.5vw,3rem);
+    font-size: clamp(1rem,2.5vw,2rem);
 }
 
 footer a {
