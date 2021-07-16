@@ -183,7 +183,7 @@ position-relative {
 pave-couleur {
     background-color: #f9f6f5;
     display: block;
-    width: 100vw;
+    width: 98vw;
     height:34vw;
     position: absolute;
     z-index:1;
@@ -192,7 +192,7 @@ pave-couleur {
 
 iframe {
     grid-column: 1 / span 2;
-    width:100%;
+    width:99%;
     margin-top:50px;
     order:3;
 
