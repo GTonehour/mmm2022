@@ -81,7 +81,7 @@
     <!-- <a href1="https://mmm22.zankyou.com/fr">https://mmm22.zankyou.com/fr</a> -->
 
     <div class="white-container">
-        <a href="https://mmm22.zankyou.com/fr"><button id="liste" class="button" style="cursor:pointer"><span>Liste de mariage</span></button></a>
+        <a href="https://mmm22.zankyou.com/fr"><button id="liste" class="button" style="cursor:pointer"><span style="min-height:7vh">Liste de mariage</span></button></a>
     </div>
 
 </contenu-liste>
@@ -122,11 +122,11 @@ let calculateAngle = function(e, item, parent) {
 
     // Use this to create an angle. I have divided by 6 and 4 respectively so the effect looks good.
     // Changing these numbers will change the depth of the effect.
-    let calcAngleX = (x - halfWidth) / 6;
+    let calcAngleX = (x - halfWidth) / 40;
     let calcAngleY = (y - halfHeight) / 4;
 
     // Set the items transform CSS property
-    item.style.transform = `rotateY(${calcAngleX}deg) rotateX(${calcAngleY}deg) scale(1.15)`;
+    item.style.transform = `rotateY(${calcAngleX}deg) rotateX(${calcAngleY}deg) scale(1)`;
     
     // And set its container's perspective.
     parent.style.perspective = `${halfWidth * 2}px`
@@ -137,8 +137,8 @@ let calculateAngle = function(e, item, parent) {
     }
 
     // Reapply this to the shadow, with different dividers
-    let calcShadowX = (x - halfWidth) / 3;
-    let calcShadowY = (y - halfHeight) / 3;
+    let calcShadowX = (x - halfWidth) / 10;
+    let calcShadowY = (y - halfHeight) / 10;
     
     // Add a filter shadow - this is more performant to animate than a regular box shadow.
     item.style.filter = `drop-shadow(${-calcShadowX}px ${calcShadowY}px 15px ${dropShadowColor})`;
