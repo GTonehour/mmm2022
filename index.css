@@ -274,12 +274,12 @@ img {
     appearance: none;
     border: none;
     letter-spacing: 1px;
+    margin: 7vh;
 }
 
 button span {
-    background: linear-gradient(180deg, #ff7147, #e0417f);
     font-size: 2rem;
-    color: white;
+    color: #a5aa95;
     padding: 1rem 2rem;
     line-height: 3rem;
     will-change: transform, filter;
@@ -297,4 +297,5 @@ button span {
     font-weight: 500;
     perspective-origin: 0 0;
     letter-spacing: 0;
+    border: .2em solid;
 }
